@@ -20,7 +20,7 @@ export default {
                         <router-link class="nav-link" to="/posts">MyPost</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/contact">Contact</router-link>
+                        <router-link class="nav-link" to="/addpost">Addpost</router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" to="/register">Registrati</router-link>

@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import AppHome from './pages/AppHome.vue';
 import AppPost from './pages/AppPost.vue';
-import AppContact from './pages/AppContact.vue';
+import AppAddPost from './pages/AppAddPost.vue';
 import AppRegister from './pages/AppRegister.vue';
 import AppLogin from './pages/AppLogin.vue';
 
@@ -20,9 +20,9 @@ const router = createRouter(
                 component: AppPost,
             },
             {
-                path: '/contact',
-                name: 'contact',
-                component: AppContact,
+                path: '/addpost',
+                name: 'addPost',
+                component: AppAddPost,
             },
             {
                 path: '/register',
