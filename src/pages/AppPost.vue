@@ -26,15 +26,44 @@ export default {
 
 </script>
 <template>
-    <div class="container mt-5">
-        <div v-for="post in posts" :key="post.id" class="card mb-3">
-            <img :src="`/${post.image}`" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{ post.title }}</h5>
-                <p class="card-text">{{ post.content }}</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    <div class="container-fluid mt-5">
+        <div class="cardContainer">
+            <div v-for="post in posts" :key="post.id" class="mb-3 customizedCard">
+                <img :src="`/${post.image}`" class="card-img-top" alt="...">
+                <div class="card-body mt-3">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <p class="card-text">{{ post.content }}</p>
+                </div>
+                <router-link :to="'/show/' + post.slug">
+                    <button class="btn btn-primary">Vai</button>
+                </router-link>
             </div>
+
         </div>
+
+
     </div>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.customizedCard {
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 30px;
+
+    img {
+        height: 400px;
+        border-radius: 30px;
+
+    }
+
+    width: 400px;
+    margin-right: 30px;
+    background-color: rgba($color: white, $alpha: 0.7);
+}
+</style>

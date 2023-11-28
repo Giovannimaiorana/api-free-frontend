@@ -4,6 +4,9 @@ export default {
 }
 </script>
 <template>
+    <div>
+
+    </div>
     <nav class="navbar navbar-expand-lg customColor">
         <div class="container-fluid">
             <img src="../assets/logo.png" alt="logo">
@@ -24,9 +27,6 @@ export default {
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" to="/register">Registrati</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link class="nav-link" to="/login">Login</router-link>
                     </li>
                 </ul>
             </div>

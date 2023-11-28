@@ -1,7 +1,28 @@
 <script>
 
 </script>
+
 <template>
-    <h1>Questa è la home</h1>
+    <div class="container">
+        <div class="containerCustom">
+            <div class="containerImg">
+                <img src="../assets/benvenuto.png" alt="">
+            </div>
+        </div>
+    </div>
 </template>
-<style lang="scss" scoped></style>
+
+<style lang="scss" scoped>
+.containerCustom {
+    display: flex;
+    width: 100%;
+
+    .containerImg {
+        margin: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+</style>

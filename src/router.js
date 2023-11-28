@@ -3,7 +3,8 @@ import AppHome from './pages/AppHome.vue';
 import AppPost from './pages/AppPost.vue';
 import AppAddPost from './pages/AppAddPost.vue';
 import AppRegister from './pages/AppRegister.vue';
-import AppLogin from './pages/AppLogin.vue';
+import AppSingolPost from './pages/AppSingolPost.vue';
+
 
 const router = createRouter(
     {
@@ -30,10 +31,10 @@ const router = createRouter(
                 component: AppRegister,
             },
             {
-                path: '/login',
-                name: 'login',
-                component: AppLogin,
-            },
+                path: '/show/:slug',
+                name: 'show',
+                component: AppSingolPost,
+            }
         ]
     }
 );

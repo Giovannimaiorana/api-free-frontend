@@ -16,4 +16,12 @@ export default {
   </body>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+main {
+  height: 100vh;
+  background-image: url(./assets/wave.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+}
+</style>
